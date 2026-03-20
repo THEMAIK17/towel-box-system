@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using TowelBox.Application.Interfaces;
 using TowelBox.Infrastructure.Data;
 using TowelBox.Infrastructure.Repositories;
+using TowelBox.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<ITowelRepository, TowelRepository>();
 builder.Services.AddScoped<IBoxRepository, BoxRepository>();
 
+//services
+builder.Services.AddScoped<ITowelService, TowelService>();
+builder.Services.AddScoped<IBoxService, BoxService>();
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
