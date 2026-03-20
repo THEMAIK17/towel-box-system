@@ -1,0 +1,6 @@
+@TowelBox.Api_HostAddress = http://localhost:5130
+
+GET {{TowelBox.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
