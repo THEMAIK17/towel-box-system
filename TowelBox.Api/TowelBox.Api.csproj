@@ -4,6 +4,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>412e7576-60b7-471f-8168-c405b45ccfcc</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
@@ -18,6 +19,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\TowelBox.Application\TowelBox.Application.csproj" />
+      <ProjectReference Include="..\TowelBox.Infrastructure\TowelBox.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>
