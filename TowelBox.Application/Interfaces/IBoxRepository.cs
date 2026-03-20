@@ -9,6 +9,7 @@ public interface IBoxRepository
     Task<Box?> GetByIdAsync(Guid id);
 
     Task<Box?> GetByBoxCodeAsync(string boxCode);
+    Task<bool> ExistsByBoxCodeAsync(string boxCode);
 
     Task AddAsync(Box box);
 
